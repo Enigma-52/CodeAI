@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/material.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+</head>
+<body>
+  <div id="codepen-clone">
+    <div id="editor-container">
+      <div id="html-editor-container" class="code-editor-container">
+        <div class="editor-heading">
+          <span class="editor-heading-symbol">&lt;/&gt;</span> HTML
+        </div>
+        <textarea id="html-editor" class="code-editor" placeholder="HTML"></textarea>
+      </div>
+      <div id="css-editor-container" class="code-editor-container">
+        <div class="editor-heading">
+          <span class="editor-heading-symbol">{ }</span> CSS
+        </div>
+        <textarea id="css-editor" class="code-editor" placeholder="CSS"></textarea>
+      </div>
+      <div id="js-editor-container" class="code-editor-container">
+        <div class="editor-heading">
+          <span class="editor-heading-symbol">&#60;&#47;&#62;</span> JavaScript
+        </div>
+        <textarea id="js-editor" class="code-editor" placeholder="JavaScript"></textarea>
+      </div>
+    </div>
+    <div id="output-canvas">
+      <canvas id="output-canvas-element"></canvas>
+    </div>
+    <div id="buttons">
+      <button id="runBtn" hidden>Run</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/css/css.min.js"></script>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
