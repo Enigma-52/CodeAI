@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+  }
+
+  #codepen-clone {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1600px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 100vh;
+  }
+
+  #editor-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    height: auto; /* Change height to auto */
+}
+
+.code-editor-container {
+  flex: 1; /* Ensure it takes up remaining space */
+  width: 94%;
+  height: auto; /* Change height to auto */
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+
+  .code-editor {
+    width: 95.5%;
+    flex: 1;
+    border: none;
+    font-family: 'Courier New', monospace;
+    resize: none;
+    overflow: auto;
+    transition: background-color 0.3s;
+  }
+
+  #output-canvas {
+    flex: 1;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto; /* Change height to auto */
+  }
+
+  canvas {
+    border: 2px solid black;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #dark-mode-toggle {
+    margin-right: 20px;
+  }
+
+  #dark-mode-toggle label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #dark-mode-toggle input {
+    margin-right: 8px;
+  }
+
+  #dark-mode-toggle .slider {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+
+  #dark-mode-toggle .slider:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  #dark-mode-toggle input:checked + .slider {
+    background-color: #007bff;
+  }
+
+  #dark-mode-toggle input:checked + .slider:before {
+    transform: translateX(20px);
+    background-color: #fff;
+  }
+
+  #dark-mode-toggle .slider:active:before {
+    transform: scale(1.2);
+  }
+
+  .editor-heading {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .editor-heading-symbol {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  /* Adjusted styles for dark mode */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #codepen-clone.dark-mode {
+    background-color: #444;
+  }
+
+  .code-editor-container.dark-mode {
+    border-right: 2px solid #555;
+  }
+
+  .code-editor.dark-mode {
+    background-color: #555;
+    color: #fff;
+  }
+
+  #output-canvas.dark-mode {
+    border-top: 1px solid #555;
+  }
+
+  #buttons.dark-mode {
+    background-color: #555;
+    border-top: 1px solid #555;
+  }
+
+  .editor-heading.dark-mode {
+    background-color: #555;
+    border-bottom: 1px solid #555;
+  }
+
+  .editor-heading-symbol.dark-mode {
+    color: #fff;
+  }
