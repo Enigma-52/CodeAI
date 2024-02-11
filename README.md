@@ -6,7 +6,11 @@ Welcome to CodeAI, your go-to platform for testing out HTML, CSS, and JS code wi
 
 ![B840EBCC-B02C-4753-BABC-DBC5D1B6775F](https://github.com/Enigma-52/CodeAI/assets/95529619/2e259966-5190-45aa-8e71-1b5a57bcb710)
 
+
+
 ![32D0B2E9-CB69-4FF1-AB8C-34799DB6D41D](https://github.com/Enigma-52/CodeAI/assets/95529619/b13e27fc-8b25-4656-a165-1af4a5017054)
+
+
 
 ![F533DB81-414F-42D1-8FC0-4813734CE8AB](https://github.com/Enigma-52/CodeAI/assets/95529619/908cbde3-b850-4be2-a774-0a12427c4401)
 
