@@ -22,9 +22,6 @@ body {
 
   #editor-container {
     display: flex;
-    flex: 1;
-    overflow: hidden;
-    height: auto; /* Change height to auto */
 }
 
 .code-editor-container {
@@ -228,7 +225,7 @@ body.show-chatbot .chatbot-toggler span:last-child {
   opacity: 1;
 }
 .chatbot {
-  position: fixed;
+  position: absolute;
   right: 35px;
   bottom: 90px;
   width: 420px;
@@ -236,6 +233,7 @@ body.show-chatbot .chatbot-toggler span:last-child {
   border-radius: 15px;
   overflow: hidden;
   opacity: 0;
+  z-index: 51;
   pointer-events: none;
   transform: scale(0.5);
   transform-origin: bottom right;
@@ -379,4 +377,46 @@ header h2 {
   .chatbot header span {
     display: block;
   }
+}
+
+.unique-button-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.unique-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px; /* Set desired width for buttons */
+  text-align: center; /* Center text inside buttons */
+}
+
+.unique-horizontal-line {
+  display: block;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center text in left column */
+  align-items: center; /* Center text in left column */
+}
+
+#buttonColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center buttons horizontally */
 }
