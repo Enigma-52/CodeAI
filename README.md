@@ -32,6 +32,10 @@ To start using CodeAI, simply sign up for an account on our website and you'll b
 3. **AI Chatbot**: Have questions or need assistance? Simply ask our AI chatbot for help.
 4. **Code Context**: Gain insights into your code with the live code context feature.
 
+## Product Hunt
+
+Help us grow by supporting us on Product Hunt! [![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Support%20Us-orange)](https://www.producthunt.com/products/codeai-2)
+
 ## Feedback
 
 We are constantly working to improve CodeAI and would love to hear your feedback. If you have any suggestions, feature requests, or encounter any issues while using the platform, please don't hesitate to reach out to us.
